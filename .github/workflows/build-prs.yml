@@ -41,3 +41,4 @@ jobs:
         with:
          name: projects
          path: ./projects
+              !*.jar
