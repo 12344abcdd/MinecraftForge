@@ -37,12 +37,7 @@ jobs:
           arguments: setup
           cache-read-only: false
 
-      - name: Build with Gradle
-        uses: gradle/gradle-build-action@v2
-        with:
-          arguments: build -x spotlessJava -x checkLicenseCustomNeoforge -x createChangelog -x spotlessCheck
-          cache-read-only: false
       - uses: actions/upload-artifact@v4
         with:
-         name: project
-         path: .
+         name: projects
+         path: ./projects
